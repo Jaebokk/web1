@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>스크롤</title>
+<script type="javascript">
+y = 0;
+timeID = null;
+dy = 4;
+limity = 500;
+speed = 100;
+
+function scrollUp(){
+	if (y < limity)
+	{
+		scrollTO(0, y+=dy);
+		clearTimeout(timeID);
+		timeID = setTimeout('scrollUp()', speed);
+	}
+}
+</script>
+</head>
+<body bgcolor="white" onload="scrollUp()">
+<p>
+<center>
+<h2>화면을 위로 스크롤되게 한다.</h2>
+</center>
+<img scr="blank.gif" width="1" height="500"> <br>
+<center>
+<table border="4">
+<th><th><img src="pict.jpg" width="320" height="240"> </th></th>
+</table>
+</center>
+</p></body></html>

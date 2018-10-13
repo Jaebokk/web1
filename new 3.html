@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>확인 대화상자 표시</title>
+<script language="JavaScript">
+<!--
+function cheak()
+{
+	flag = confirm("당신은 회원입니까?");
+	if (flag) location.href = "1.html"; else alert("회원이 아닌 분은 볼 수 없습니다.");
+}
+// -->
+</script>
+</head>
+<body bgColor=#FFffFF">
+<center>
+<h1>확인대화상자 표시</h1>
+</center>
+<blockquote>
+아래의 버튼을 누르면 확인대화상자를 표시한다. OK를 선택하면 회원 페이지로, 그렇지 않으면 경고를 내보낸다.
+</blockquote>
+<center>
+<form>
+<input type="button" value="회원 페이지로" onClick="cheak()">
+</form>
+</body>
+</html>

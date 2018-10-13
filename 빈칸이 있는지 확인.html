@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>빈칸이 있는지 확인</title>
+	<script language="javascript">
+	function formcheck()
+	{
+		if (document.myForm.address.value == ""){ alert("주소를 입력해 주십시오."); return false;}
+		if (document.myForm.name.value == ""){ alert("이름을 입력해 주십시오."); return false;}
+		if(document.myForm.age.value == ""){ alert("나이를 입력해 주십시오."); return false;}
+	}
+</script>
+</head>
+<body bgcolor="white">
+<from name="myForm" action=mailto:chronos@booba.co.kr>
+주소 : <input type="text" name="address"><BR>
+이름 : <input type="text" name="name"><br>
+나이 : <input type="text" name="age"><br>
+<input type="submit" value="전송" onclick="return formcheck()"><br>
+</body>
+</html>
